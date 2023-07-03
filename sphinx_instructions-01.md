@@ -2,7 +2,7 @@
 
 ### You can just run this script
 
-bash <(curl -s https://raw.githubusercontent.com/dkypuros/sphinx-rst-rtd-notes/main/codespaces-sphinx-localdev.sh)
+bash <(curl -s https://raw.githubusercontent.com/drcoopertbbt/sphinx-scripts/main/codespaces-sphinx-localdev.sh)
 
 
 see: 
