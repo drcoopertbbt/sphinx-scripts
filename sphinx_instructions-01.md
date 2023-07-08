@@ -2,7 +2,7 @@
 
 ### You can use this script to build the initial sphinx environment.
 
-bash <(curl -s https://raw.githubusercontent.com/drcoopertbbt/sphinx-scripts/main/codespaces-sphinx-build.sh)
+bash <(curl -s https://raw.githubusercontent.com/drcoopertbbt/sphinx-scripts/main/codespaced-sphinx-build.sh)
 
 ### You can just run this script - update the build
 
