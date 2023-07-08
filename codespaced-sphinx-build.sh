@@ -30,13 +30,26 @@ pip install sphinxcontrib-mermaid
 pip install sphinx-book-theme 
 pip install sphinx-material
 
-# Update the html_theme in conf.py
-echo "Updating the html_theme in conf.py..."
-sed -i "s/html_theme = 'pyramid'/html_theme = 'sphinx_rtd_theme'/g" source/conf.py
+# Setup Sphinx
+echo "Setting up Sphinx..."
+echo -e "y\nsphinx-project\nDavid Kypuros\n1\nen\n\n\n\n\nn\n\n" | sphinx-quickstart
 
 # Build the project
 echo "Building the project..."
 make html
+
+# Update the html_theme in conf.py
+echo "Updating the html_theme in conf.py..."
+sed -i "s/html_theme = 'alabaster'/html_theme = 'sphinx_rtd_theme'/g" source/conf.py
+
+# Download and replace the index.rst
+echo "Replacing index.rst..."
+wget https://raw.githubusercontent.com/drcoopertbbt/sphinx-scripts/main/initial-build-files/page1.rst -O source/index.rst
+
+# Download page1.rst and page2.rst
+echo "Adding page1.rst and page2.rst..."
+wget https://raw.githubusercontent.com/drcoopertbbt/sphinx-scripts/main/initial-build-files/page1.rst -O source/page1.rst
+wget https://raw.githubusercontent.com/drcoopertbbt/sphinx-scripts/main/initial-build-files/page2.rst -O source/page2.rst
 
 # Install sphinx-autobuild
 echo "Installing sphinx-autobuild..."
