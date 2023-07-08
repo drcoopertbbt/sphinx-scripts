@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#remove anything in the current directory structure in codespaces:
+rm -rf *
+
 # Exit script if any command fails
 set -e
 
