@@ -48,7 +48,7 @@ sed -i "s/html_theme = 'alabaster'/html_theme = 'sphinx_rtd_theme'/g" source/con
 
 # Download and replace the index.rst
 echo "Replacing index.rst..."
-wget https://raw.githubusercontent.com/drcoopertbbt/sphinx-scripts/main/initial-build-files/page1.rst -O source/index.rst
+wget https://raw.githubusercontent.com/drcoopertbbt/sphinx-scripts/main/initial-build-files/index.rst -O source/index.rst
 
 # Download page1.rst and page2.rst
 echo "Adding page1.rst and page2.rst..."
