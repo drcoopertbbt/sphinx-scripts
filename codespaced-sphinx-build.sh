@@ -62,6 +62,10 @@ wget https://raw.githubusercontent.com/drcoopertbbt/sphinx-scripts/main/initial-
 echo "Installing sphinx-autobuild..."
 pip install sphinx-autobuild
 
+#git push
+git add .
+git commit -m "1"
+
 # Navigate out of the docs directory and start the autobuild
 echo "Starting autobuild..."
 cd ..
