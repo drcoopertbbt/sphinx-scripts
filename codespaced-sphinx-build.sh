@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Exit script if any command fails
+set -e
+
 # Script for setting up Sphinx in GitHub CodeSpaces
 
 # Check the Python and pip versions
@@ -15,6 +18,7 @@ source venv/bin/activate
 
 # Create a new directory named docs and navigate into it
 echo "Moving into docs directory..."
+mkdir docs
 cd docs
 
 # Install sphinx
