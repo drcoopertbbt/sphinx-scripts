@@ -1,6 +1,10 @@
 ## Special section for using GitHub CodeSpaces
 
-### You can just run this script
+### You can use this script to build the initial sphinx environment.
+
+bash <(curl -s https://raw.githubusercontent.com/drcoopertbbt/sphinx-scripts/main/codespaces-sphinx-build.sh)
+
+### You can just run this script - update the build
 
 bash <(curl -s https://raw.githubusercontent.com/drcoopertbbt/sphinx-scripts/main/codespaces-sphinx-localdev.sh)
 
