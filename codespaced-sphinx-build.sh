@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#remove anything in the current directory structure in codespaces:
+# Remove anything in the current directory structure in codespaces:
 rm -rf *
 
 # Exit script if any command fails
@@ -62,13 +62,19 @@ wget https://raw.githubusercontent.com/drcoopertbbt/sphinx-scripts/main/initial-
 echo "Installing sphinx-autobuild..."
 pip install sphinx-autobuild
 
-#git push
-git add .
-git commit -m "1"
+# Download and place the deployment.yaml into the .github/workflows directory
+echo "Adding deployment.yaml..."
+mkdir -p ../.github/workflows
+wget https://raw.githubusercontent.com/drcoopertbbt/sphinx-scripts/main/initial-build-files/deployment.yaml -O ../.github/workflows/deployment.yaml
 
-# Navigate out of the docs directory and start the autobuild
-echo "Starting autobuild..."
+# Git push
+echo "Committing changes..."
 cd ..
+git add .
+git commit -m "Initial commit"
+
+# Start the autobuild
+echo "Starting autobuild..."
 sphinx-autobuild --host 0.0.0.0 --port 8080 docs/source docs/build/html
 
 # Instructions for the final step
