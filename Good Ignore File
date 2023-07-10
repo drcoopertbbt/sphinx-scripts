@@ -1,0 +1,69 @@
+# .gitignore for Sphinx documentation
+
+# Build files
+_build/
+dist/
+*.pyc
+*.pyo
+*.pyd
+**/__pycache__
+
+# Sphinx files that can be regenerated
+*.mo
+*.pot
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*~
+"*.bak"
+"*.swp"
+auto_save_*
+backup_*
+dump_*
+temp_*
+tmp_*
+
+# Others
+*.log
+*.aux
+*.out
+*.toc
+*.nav
+*.snm
+*.vrb
+*.bbl
+*.blg
+*.brf
+*.cb
+*.ind
+*.idx
+*.ilg
+*.inx
+*.loe
+*.lof
+*.lot
+*.out.ps
+*.synctex.gz
+*.ttt
+*.fff
+*.fdb_latexmk
+*.fls
+*.synctex(busy)
