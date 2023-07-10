@@ -1,7 +1,7 @@
 # .gitignore for Sphinx documentation
 
 # Build files
-_build/
+build/
 dist/
 *.pyc
 *.pyo
